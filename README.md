@@ -122,7 +122,7 @@ npm install -g yarn
 1.  Add zod-prisma as a dev dependency
 
     ```sh
-    yarn add -D zod-prisma
+    yarn add -D @katakatataan/zod-prisma
     ```
 
 2.  Add the zod-prisma generator to your schema.prisma
