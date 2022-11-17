@@ -15,7 +15,7 @@ jobs:
 
         with:
           node-version: 18
-      - run: yarn ci
+      - run: yarn install --imutable
       - run: yarn test
 
   publish-gpr:
@@ -32,7 +32,7 @@ jobs:
         with:
           node-version: 18
           registry-url: https://npm.pkg.github.com/
-      - run: yarn ci
+      - run: yarn install --imutable
       - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
