@@ -16,6 +16,7 @@ generatorHandler({
 		}
 	},
 	onGenerate(options) {
+		if (process.env.NODE_ENV == 'production') return Promise.resolve()
 		const project = new Project()
 
 		const models = options.dmmf.datamodel.models
