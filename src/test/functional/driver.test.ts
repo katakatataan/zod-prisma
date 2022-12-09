@@ -1,5 +1,5 @@
 import glob from 'fast-glob'
-import execa from 'execa'
+import { execa } from 'execa'
 import { getDMMF, getConfig } from '@prisma/sdk'
 import { readFile } from 'fs-extra'
 import path from 'path'
