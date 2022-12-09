@@ -9,6 +9,7 @@
 		"type": "git",
 		"url": "https://github.com/CarterGrimmeisen/zod-prisma.git"
 	},
+	"type": "module",
 	"bugs": {
 		"url": "https://github.com/CarterGrimmeisen/zod-prisma/issues"
 	},
@@ -68,6 +69,7 @@
 		"husky": "^8.0.2",
 		"jest-mock-extended": "^3.0.1",
 		"prisma": "^4.7.1",
+		"ts-jest": "^29.0.3",
 		"tslib": "^2.4.1",
 		"typescript": "^4.9.4",
 		"zod": "^3.19.1"
