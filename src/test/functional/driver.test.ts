@@ -106,6 +106,7 @@ describe('Functional Tests', () => {
 	test.concurrent('Docs', ftForDir('docs'))
 	test.concurrent('Different Client Path', ftForDir('different-client-path'))
 	test.concurrent('Recursive Schema', ftForDir('recursive'))
+	test.concurrent('Enum', ftForDir('enum'))
 	test.concurrent('relationModel = false', ftForDir('relation-false'))
 	test.concurrent('Relation - 1 to 1', ftForDir('relation-1to1'))
 	test.concurrent('Imports', ftForDir('imports'))
