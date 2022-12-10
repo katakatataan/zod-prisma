@@ -2,15 +2,15 @@
 import { version } from '../package.json'
 
 import { generatorHandler } from '@prisma/generator-helper'
-// import { SemicolonPreference } from 'typescript'
-enum SemicolonPreference {
-	Ignore = "ignore",
-	Insert = "insert",
-	Remove = "remove"
-}
 import { configSchema, PrismaOptions } from './config'
 import { populateModelFile, generateBarrelFile } from './generator'
 import { Project } from 'ts-morph'
+// import { SemicolonPreference } from 'typescript'
+enum SemicolonPreference {
+	Ignore = 'ignore',
+	Insert = 'insert',
+	Remove = 'remove',
+}
 
 generatorHandler({
 	onManifest() {
