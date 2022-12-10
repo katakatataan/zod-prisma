@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.6](https://github.com/twihika/zod-prisma/compare/v0.0.5...v0.0.6) - 2022-12-10
+- ignore typescript when generate by @katakatataan in https://github.com/twihika/zod-prisma/pull/11
+
 ## [v0.0.4](https://github.com/twihika/zod-prisma/compare/v0.0.3...v0.0.4) - 2022-12-10
 - update by @katakatataan in https://github.com/twihika/zod-prisma/pull/6
 - upadte by @katakatataan in https://github.com/twihika/zod-prisma/pull/7
