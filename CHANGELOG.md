@@ -1,5 +1,8 @@
 # Changelog
 
+## [v0.0.1](https://github.com/katakatataan/zod-prisma/commits/v0.0.1) - 2022-12-19
+- changen name space by @katakatataan in https://github.com/katakatataan/zod-prisma/pull/2
+
 ## [v0.0.7](https://github.com/twihika/zod-prisma/compare/v0.0.6...v0.0.7) - 2022-12-12
 - update by @katakatataan in https://github.com/twihika/zod-prisma/pull/12
 
