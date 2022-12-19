@@ -6,22 +6,22 @@ on:
   push:
     branches: ["main"]
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
+  # build:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v3
 
-      - uses: actions/setup-node@v3
+  #     - uses: actions/setup-node@v3
 
-        with:
-          node-version: 18
-      - run: yarn install --imutable
-      - run: yarn test
+  #       with:
+  #         node-version: 18
+  #     - run: yarn install --imutable
+  #     - run: yarn test
 
   publish-gpr:
     environment:
       name: production
-    needs: build
+    # needs: build
     runs-on: ubuntu-latest
     permissions:
       packages: write
@@ -35,6 +35,7 @@ jobs:
           node-version: 18
           registry-url: https://npm.pkg.github.com/
       - run: yarn install --imutable
-      - run: npm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}" && npm publish
+      - run: yarn run build
+      - run: npm config set '//registry.npmjs.org/:_authToken' "${NPM_TOKEN}" && npm publish --access=public
         env:
           NPM_TOKEN: ${{secrets.NPM_TOKEN}}
