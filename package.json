@@ -1,5 +1,5 @@
 {
-	"name": "@katakatataan/zod-prisma",
+	"name": "@matsuyan/zod-prisma",
 	"version": "0.5.7",
 	"description": "A Prisma generator that creates Zod schemas for all of your models",
 	"license": "MIT",
@@ -85,8 +85,5 @@
 	},
 	"engines": {
 		"node": ">=18"
-	},
-	"publishConfig": {
-		"@twihika:registry": "https://npm.pkg.github.com"
 	}
 }
